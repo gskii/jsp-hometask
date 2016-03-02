@@ -7,12 +7,32 @@
 
     <servlet>
         <servlet-name>LoginResponseServlet</servlet-name>
-        <servlet-class>ru.ncedu.login.LoginResponseServlet</servlet-class>
+        <servlet-class>ru.ncedu.LoginResponseServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginResponseServlet</servlet-name>
-        <url-pattern>/loginResponse</url-pattern>
+        <url-pattern>/login</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserInfoServlet</servlet-name>
+        <servlet-class>ru.ncedu.UserInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserInfoServlet</servlet-name>
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MailSenderServlet</servlet-name>
+        <servlet-class>ru.ncedu.MailSenderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MailSenderServlet</servlet-name>
+        <url-pattern>/mail</url-pattern>
+    </servlet-mapping>
+
+
 
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>

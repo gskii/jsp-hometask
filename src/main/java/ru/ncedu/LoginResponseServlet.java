@@ -1,4 +1,4 @@
-package ru.ncedu.login;
+package ru.ncedu;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
