@@ -4,9 +4,10 @@
 
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
+
     <servlet>
         <servlet-name>LoginResponseServlet</servlet-name>
-        <servlet-class>ru.ncedu.first.LoginResponse</servlet-class>
+        <servlet-class>ru.ncedu.login.LoginResponseServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginResponseServlet</servlet-name>
