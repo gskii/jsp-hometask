@@ -17,11 +17,12 @@ public class UserInfoServlet extends HttpServlet {
         PrintWriter out = resp.getWriter();
         Calendar calendar = Calendar.getInstance();
         StringBuilder body = new StringBuilder();
-        body.append("<div style=\"margin:auto; PADDING-TOP: 50%;\">");
+        body.append("<div style=\"text-align: center;margin-top: 40vh;\">");
         body.append("<h1>");
         body.append(calendar.get(Calendar.DAY_OF_MONTH)).append(":");
         body.append(calendar.get(Calendar.MONTH)).append(":");
-        body.append(calendar.get(Calendar.YEAR));
+        body.append(calendar.get(Calendar.YEAR)).append("<br>");
+        body.append(req.getHeader("User-Agent"));
         body.append("</h1>");
         body.append("</div>");
         out.print(body.toString());
