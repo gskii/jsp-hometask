@@ -18,7 +18,6 @@
     <label>
         Status: <%=request.getAttribute("status")%>
     </label>
-
 </form>
 </body>
 </html>
